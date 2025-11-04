@@ -1,0 +1,49 @@
+$primaryColor: #226f56; //#006b57
+$secondaryColor: #00a99d;
+
+$bodybg: #e6ebe3;
+
+$color1:  #465247;
+$color2: #9cc6b5;
+$color3: #f3f3ee;
+$color4: #008e62;
+$bodyTextColor: #231f20;
+$placeholderColor: #b7b9bb;
+$headingColor: #231f20;
+$white: #fff;
+$black: #000;
+$darkGray: #5a5b5d;
+$lightGray1: #e3e3e3;
+$lightGray2: #cccccc;
+$lightGray3: #efefef;
+
+$linkColor: #ee7869;
+
+$bodyFontSize: 16px;
+$bodyLineHeight: 1.6;
+$bodyFontFamily: 'Raleway', sans-serif;
+$headingFont: 'Raleway', sans-serif;
+$heroFont: 'Dala Prisma', 'Raleway', sans-serif;
+
+$h1Size: 45px;
+$h2Size: 34px;
+$h3Size: 24px;
+$h4Size: 20px;
+
+
+@mixin resetUl {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+$baseFontSize: $bodyFontSize;
+@function r($pixels, $context: $baseFontSize) {
+    @if (unitless($pixels)) {
+        $pixels: $pixels * 1px;
+    }
+    @if (unitless($context)) {
+        $context: $context * 1px;
+    }
+    @return $pixels / $context * 1rem;
+}

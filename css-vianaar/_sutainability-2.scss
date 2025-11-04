@@ -1,0 +1,151 @@
+.sustainability-hero {
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($black, .33);
+    }
+}
+
+.sustainability-wrap {
+    .sustain-text {
+        color: $sutainTextColor;
+        font-size: 16px!important;
+    }
+    .mxw-0 {
+        max-width: initial!important;
+    }
+    .mxw-435 {
+        max-width: 435px;
+    }
+    .mxw-480 {
+        max-width: 480px;
+    }
+    .mxw-520 {
+        max-width: 520px!important;
+    }
+    .mxw-550 {
+        max-width: 550px!important;
+    }
+    .mxw-595 {
+        max-width: 595px!important;
+    }
+    .mxw-785 {
+        max-width: 785px!important;
+    }
+    .mxw-850 {
+        max-width: 850px!important;
+    }
+    .py-lg-90 {
+        @include media-breakpoint-up(lg) {
+            padding-top: 90px;
+            padding-bottom: 90px;
+        }
+    }
+    .py-lg-50 {
+        @include media-breakpoint-up(lg) {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+    }
+    .tc-content {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .img-fit {
+        height: 100%;
+        object-fit: cover;
+    }
+    &.pt-0 {
+        padding-top: 0!important;
+    }
+    .text-green {
+        color: $primaryColor;
+    }
+    .sutain-border-color {
+        border-color: $sutainBorderColor!important;
+    }
+    .vf-text {
+        .accor {
+            padding-bottom: 15px;
+            h4 {
+                color: $black;
+                font-size: 18px;
+                text-transform: uppercase;
+                padding-left: 55px;
+                &:before {
+                    color: $black;
+                    content: "\e905";
+                    top: 50%;
+                    transform: translateY(-50%);
+                    font-size: 30px;
+                    transition: .3s;
+                }
+            }
+            .accor-text {
+                font-size: 18px;
+                padding-left: 55px;
+                color: $black;
+                font-weight: 500;
+            }
+            &.active {
+                h4 {
+                    &:before {
+                        transform: translateY(-50%) rotate(90deg);
+                    }
+                }
+            }
+        }
+    }
+    .home-card {
+        >h3 {
+            color: #226F57;
+            font-weight: 600;
+        }
+        .ct-text {
+            >p {
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .fs-16 {
+        font-size: 16px!important;
+    }
+    .fs-18 {
+        font-size: 18px!important;
+    }
+    .fw-600 {
+        font-weight: 600!important;
+    }
+    // .sustain-card {
+    //     .card-wrap {
+    //         padding: 32px;
+    //     }
+    // }
+    .full-card {
+        .line-text {
+            @include media-breakpoint-up(lg) {
+                padding-left: 40px;
+                padding-right: 0;
+                left: 0;
+                right: auto;
+            }
+        }
+    }
+}
+
+.sustainability-wrap {
+    .pattern-bg {
+        height: 100%!important;
+        top: 0;
+        @include media-breakpoint-down(lg) {
+            margin-top: -50%;
+        }
+    }
+}

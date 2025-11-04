@@ -1,0 +1,259 @@
+// .sustainability-wrap{
+//     .container{
+//         max-width: none;
+//     }
+// }
+
+
+.v-card {
+    text-decoration: none !important;
+    display: block;
+    color: $black !important;
+    .v-head {
+        margin-bottom: 0;
+        padding: 6px 20px 3px 20px;
+        display: flex;
+        align-items: center;
+        min-height: 60px;
+        font-size: 20px;
+        line-height: 1;
+        font-weight: 600;
+        background-image: url(../images-vianaar/sustainability/heading-strip.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        @include media-breakpoint-up(xl) {
+            font-size: 24px;
+            padding: 5px 20px 3px 40px;
+        }
+    }
+    .v-img {
+        position: relative;
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-color: rgba(#313131, 0.22);
+            transition: background-color 0.3s;
+        }
+        img {
+            position: relative;
+            width: 100%;
+            display: block;
+        }
+    }
+    &:hover {
+        .v-img {
+            &:after {
+                background-color: rgba(#313131, 0.05);
+            }
+        }
+    }
+}
+
+.page-hero {
+    .hero-top {
+        visibility: hidden;
+        h1 {
+            visibility: inherit;
+        }
+    }
+}
+
+.ht-body {
+    font-size: 24px;
+    font-weight: 500;
+    max-width: 640px;
+    color: $white;
+    margin: auto;
+    line-height: 1.5;
+    margin-top: 25px;
+    p {
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.bg-primary-color {
+    background-color: $primaryColor;
+    color: $white;
+}
+
+.heading {
+    &.heading-small {
+        max-width: 756px;
+        h2 {
+            font-family: $headingFont;
+            font-size: 26px;
+            font-weight: 600;
+            line-height: 1.5;
+        }
+    }
+}
+
+.lh-1 {
+    line-height: 1;
+}
+
+.card-wrap {
+    height: 100%;
+    padding: 40px;
+    position: relative;
+    .tiles-card {
+        max-width: 395px;
+    }
+    .tc-heading {
+        font-size: 50px;
+        font-family: $heroFont;
+    }
+    .tc-body {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.5;
+        p {
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &.cw-white {
+        .tc-heading {
+            color: $primaryColor;
+        }
+    }
+}
+
+.line-text {
+    margin-right: auto;
+    color: #164637;
+    font-weight: 500;
+    border-bottom: 1px solid #164637;
+    left: 40px;
+    right: 0;
+    bottom: 40px;
+    font-size: 16px;
+    padding-top: 40px;
+    line-height: 1;
+    padding-bottom: 7px;
+    @include media-breakpoint-up(lg) {
+        position: absolute;
+        padding-right: 40px;
+        padding-top: 0;
+    }
+    &.text-white {
+        border-color: $white;
+    }
+}
+
+[class*="row-reverse"] {
+    .line-text {
+        right: auto;
+        left: 0;
+        padding-right: 0;
+        @include media-breakpoint-up(lg) {
+            padding-left: 40px;
+        }
+    }
+}
+
+.tc-button {
+    .btn-outline-light {
+        border-color: $white;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 7px 25px;
+    }
+}
+
+.fc-img {
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(#313131, 0.22);
+        transition: background-color 0.3s;
+    }
+    &.fc-img-gradient {
+        &:after {
+            background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.67) 0%, rgba(0, 0, 0, 0) 100%);
+            background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.67) 0%, rgba(0, 0, 0, 0) 100%);
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.67) 0%, rgba(0, 0, 0, 0) 100%);
+            // filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ab000000', endColorstr='#00000000', GradientType=1);
+        }
+    }
+}
+
+.full-card {
+    position: relative;
+    .card-wrap {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.sustainability-wrap {
+    margin-top: 0 !important;
+    padding-top: 160px !important;
+}
+
+.cs-navigantion {
+    .slide-counter {
+        min-width: 75px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    .btn {
+        padding: 0;
+        width: 40px;
+        height: 40px;
+        line-height: 42px;
+        text-align: center;
+        border-radius: 50%;
+        background-color: #DFDFDF;
+        text-shadow: 0 0 0 #000;
+    }
+}
+
+// .sustainability-hero{
+//     &:before{ 
+//         z-index: 1;
+//     }
+// }
+@media(max-width:991px) {
+    .ht-body {
+        font-size: 18px;
+        max-width: 500px;
+    }
+    .full-card {
+        .card-wrap {
+            position: static;
+            color: inherit;
+            .tc-heading {
+                color: $primaryColor;
+            }
+        }
+        .btn-outline-light {
+            border-color: $primaryColor !important;
+            color: $primaryColor !important;
+        }
+        .line-text {
+            border-bottom-color: $primaryColor;
+            color: $primaryColor !important;
+        }
+    }
+}
+
+@media(max-width:575px) {
+    .ht-body {
+        font-size: 16px;
+    }
+}

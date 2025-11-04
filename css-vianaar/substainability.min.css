@@ -1,0 +1,543 @@
+.mx-n2 {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem
+}
+
+.mb-n3 {
+    margin-bottom: -1rem
+}
+
+.sustainability-bottom {
+    padding-top: 40px !important
+}
+
+.v-card {
+    text-decoration: none !important;
+    display: block;
+    color: #000 !important
+}
+
+.v-card .v-head {
+    margin-bottom: 0;
+    padding: 5px 20px 3px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: 60px;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 600;
+    background-image: url(../images-vianaar/sustainability/heading-strip.png);
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.v-card .v-img {
+    position: relative
+}
+
+.v-card .v-img:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(49, 49, 49, 0.22);
+    -webkit-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    transition: background-color 0.3s
+}
+
+.v-card .v-img img {
+    position: relative;
+    width: 100%;
+    display: block
+}
+
+.v-card:hover .v-img:after {
+    background-color: rgba(49, 49, 49, 0.05)
+}
+
+@media (max-width: 991px) {
+    .v-card .v-img {
+        padding-bottom: 70%;
+        position: relative
+    }
+    .v-card .v-img img {
+        position: absolute;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover
+    }
+}
+
+.page-hero .hero-top {
+    visibility: hidden
+}
+
+.page-hero .hero-top h1 {
+    visibility: inherit
+}
+
+.ht-body {
+    font-size: 24px;
+    font-weight: 500;
+    max-width: 640px;
+    color: #fff;
+    margin: auto;
+    line-height: 1.5;
+    margin-top: 25px
+}
+
+.ht-body p:last-of-type {
+    margin-bottom: 0
+}
+
+.bg-primary-color {
+    background-color: #226f56;
+    color: #fff
+}
+
+.text-primary-color {
+    color: #226f56
+}
+
+.heading.heading-small {
+    max-width: 756px
+}
+
+.heading.heading-small h2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.5
+}
+
+.lh-1 {
+    line-height: 1
+}
+
+.card-wrap {
+    height: 100%;
+    padding: 40px;
+    position: relative
+}
+
+.card-wrap .tiles-card {
+    max-width: 395px
+}
+
+.card-wrap .tc-heading {
+    font-size: 50px;
+    font-family: "Dala Prisma", "Raleway", sans-serif
+}
+
+.card-wrap .tc-body {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5
+}
+
+.card-wrap .tc-body p:last-of-type {
+    margin-bottom: 0
+}
+
+.card-wrap.cw-white .tc-heading {
+    color: #226f56
+}
+
+.line-text {
+    margin-right: auto;
+    color: #164637;
+    font-weight: 500;
+    border-bottom: 1px solid #164637;
+    left: 40px;
+    right: 0;
+    bottom: 40px;
+    font-size: 16px;
+    padding-top: 40px;
+    line-height: 1;
+    padding-bottom: 7px
+}
+
+@media (min-width: 992px) {
+    .line-text {
+        position: absolute;
+        padding-right: 40px;
+        padding-top: 0
+    }
+}
+
+.line-text.text-white {
+    border-color: #fff
+}
+
+[class*="row-reverse"] .line-text {
+    right: auto;
+    left: 0;
+    padding-right: 0
+}
+
+@media (min-width: 992px) {
+    [class*="row-reverse"] .line-text {
+        padding-left: 40px
+    }
+}
+
+.tc-button a {
+    text-decoration: none !important;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #008e62 !important;
+    position: relative;
+    padding-right: 100px
+}
+
+.tc-button a strong {
+    font-weight: 600;
+    border-bottom: 1px solid #226f56
+}
+
+.tc-button a span {
+    margin-left: 45px
+}
+
+.tc-button a span i {
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    will-change: transform;
+    -webkit-transform: translateX(-15px);
+    -ms-transform: translateX(-15px);
+    transform: translateX(-15px);
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    -o-transition: transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s
+}
+
+.tc-button a:hover span i {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0)
+}
+
+.bg-primary-color .tc-button a {
+    color: #fff !important
+}
+
+.bg-primary-color .tc-button a strong {
+    border-color: #fff
+}
+
+.fc-img {
+    position: relative
+}
+
+.fc-img:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(49, 49, 49, 0.22);
+    -webkit-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    transition: background-color 0.3s
+}
+
+.fc-img.fc-img-gradient:after {
+    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.67)), to(rgba(0, 0, 0, 0)));
+    background: -o-linear-gradient(left, rgba(0, 0, 0, 0.67) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.67) 0%, rgba(0, 0, 0, 0) 100%)
+}
+
+.full-card {
+    position: relative
+}
+
+.full-card .card-wrap {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+@media (max-width: 991.98px) {
+    .full-card .card-wrap .tc-button a {
+        color: #008e62 !important
+    }
+    .full-card .card-wrap .tc-button a strong {
+        border-color: #008e62 !important
+    }
+}
+
+.cs-navigantion .slide-counter {
+    min-width: 75px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px
+}
+
+.cs-navigantion .btn {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 42px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #DFDFDF;
+    text-shadow: 0 0 0 #000
+}
+
+.ul-points li {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.ul-points li:before {
+    content: "-";
+    margin-right: 5px
+}
+
+.ul-points li+li {
+    margin-top: 10px
+}
+
+@media (max-width: 991px) {
+    .mb-card-40 {
+        margin-bottom: 40px
+    }
+    .ht-body {
+        font-size: 18px;
+        max-width: 500px
+    }
+    .full-card .card-wrap {
+        position: static;
+        color: inherit
+    }
+    .full-card .card-wrap .tc-heading {
+        color: #226f56
+    }
+    .full-card .btn-outline-light {
+        border-color: #226f56 !important;
+        color: #226f56 !important
+    }
+    .full-card .line-text {
+        border-bottom-color: #226f56;
+        color: #226f56 !important
+    }
+}
+
+@media (max-width: 575px) {
+    .card-wrap .tc-heading {
+        font-size: 38px
+    }
+    .ht-body {
+        font-size: 16px
+    }
+}
+
+.sustainability-hero:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.33)
+}
+
+.sustainability-wrap .sustain-text {
+    color: #91B5AA;
+    font-size: 16px !important;
+    line-height: 26px
+}
+
+.sustainability-wrap .mxw-0 {
+    max-width: initial !important
+}
+
+.sustainability-wrap .mxw-435 {
+    max-width: 435px
+}
+
+.sustainability-wrap .mxw-480 {
+    max-width: 480px
+}
+
+.sustainability-wrap .mxw-520 {
+    max-width: 520px !important
+}
+
+.sustainability-wrap .mxw-550 {
+    max-width: 550px !important
+}
+
+.sustainability-wrap .mxw-595 {
+    max-width: 595px !important
+}
+
+.sustainability-wrap .mxw-785 {
+    max-width: 785px !important
+}
+
+.sustainability-wrap .mxw-850 {
+    max-width: 850px !important
+}
+
+@media (min-width: 992px) {
+    .sustainability-wrap .py-lg-90 {
+        padding-top: 90px;
+        padding-bottom: 90px
+    }
+}
+
+@media (min-width: 992px) {
+    .sustainability-wrap .py-lg-50 {
+        padding-top: 50px;
+        padding-bottom: 50px
+    }
+}
+
+.sustainability-wrap .tc-content {
+    font-size: 16px;
+    font-weight: 500
+}
+
+.sustainability-wrap .img-fit {
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.sustainability-wrap.pt-0 {
+    padding-top: 0 !important
+}
+
+.sustainability-wrap .text-green {
+    color: #226f56
+}
+
+.sustainability-wrap .sutain-border-color {
+    border-color: #164637 !important
+}
+
+.sustainability-wrap .vf-text .accor {
+    padding-bottom: 15px
+}
+
+.sustainability-wrap .vf-text .accor h4 {
+    color: #000;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-left: 55px
+}
+
+.sustainability-wrap .vf-text .accor h4:before {
+    color: #000;
+    content: "\e905";
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 30px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s
+}
+
+.sustainability-wrap .vf-text .accor .accor-text {
+    font-size: 18px;
+    padding-left: 55px;
+    color: #000;
+    font-weight: 500;
+    line-height: 26px
+}
+
+.sustainability-wrap .vf-text .accor.active h4:before {
+    -webkit-transform: translateY(-50%) rotate(90deg);
+    -ms-transform: translateY(-50%) rotate(90deg);
+    transform: translateY(-50%) rotate(90deg)
+}
+
+.sustainability-wrap .home-card>h3 {
+    color: #226F57;
+    font-weight: 600
+}
+
+.sustainability-wrap .home-card .ct-text>p:last-child {
+    margin-bottom: 0
+}
+
+.sustainability-wrap .fs-16 {
+    font-size: 16px !important
+}
+
+.sustainability-wrap .fs-18 {
+    font-size: 18px !important
+}
+
+.sustainability-wrap .fw-600 {
+    font-weight: 600 !important
+}
+
+@media (min-width: 992px) {
+    .sustainability-wrap .full-card .line-text {
+        padding-left: 40px;
+        padding-right: 0;
+        left: 0;
+        right: auto
+    }
+}
+
+.sustainability-wrap .ul-points.mt-20 li:first-of-type {
+    margin-top: 20px
+}
+
+.sustainability-wrap .ul-points.li-margin-0 li {
+    margin: 0
+}
+
+.sustainability-wrap .ul-points.li-margin-0 li:first-of-type {
+    margin-top: 20px
+}
+
+.sustainability-wrap {
+    background-image: url(../images-vianaar/a1.png)
+}
+
+.sustainability-wrap .pattern-bg {
+    display: none !important
+}
+
+@media (max-width: 991.98px) {
+    .full-card .card-wrap {
+        padding-left: 0;
+        padding-right: 0
+    }
+    .full-card .tc-button a {
+        color: #008e62 !important
+    }
+    .card-wrap .tiles-card {
+        max-width: none !important
+    }
+    .px-md-down-0 {
+        padding-left: 0;
+        padding-right: 0
+    }
+    .bx-margin>.mb-card-40:last-of-type,
+    .row>.mb-card-40:last-of-type {
+        margin-bottom: 0
+    }
+}
+
+/*# sourceMappingURL=substainability.min.css.map */
