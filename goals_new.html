@@ -61,14 +61,14 @@
                 font-family: Arial, sans-serif;
                 }
 
-                  .footer-container {
+                .footer-container {
                     max-width: 1200px;
                     margin: auto;
                     display: grid;
                     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
                     gap: 30px;
                     }
-                
+
                     .footer h2,
                     .footer h3 {
                         color: #fff;
@@ -163,7 +163,7 @@
 
         .hero-Section {
             width: 100%;
-            /* height: 100vh; Full screen height */
+            height: 100vh; /* Full screen height */
             /* background: url("video.mp4") no-repeat center center; */
             background-size: cover; /* Ensures image covers entire section */
             display: flex;
@@ -202,7 +202,6 @@
         .contact-form select option {
             background-color: #9CC6B5 !important;
         }
-        
 
         .pt-title {
             font-weight: 500;
@@ -313,32 +312,16 @@
         }
 
         .main-nav .nav>li:hover a .cls-1 {
-            fill: #353435;
+            fill: #008e62;
         }
 
         .hasHero .nav>li a .cls-1 {
-            fill: white  !important;
+            fill: #fff !important;
         }
 
         .header-main.header-active .main-nav .nav>li>a .cls-1 {
-            fill: white !important;
+            fill: #353435 !important;
         }
-        .header-main {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  /* height: 50px; */
-  z-index: 1000;
-
-}
-
-
-/* Add padding-top to body to prevent overlap with fixed navbar */
-
-    .container-fluid.d-flex.justify-content-between.align-items-center.py-2 {
-    background: white;
-}
 
         .header-main.header-active .main-nav .nav>li:hover>a .cls-1 {
             fill: #008e62 !important;
@@ -517,7 +500,23 @@
     }
     </style>
 
-
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-N6S5KK');
+    </script>
+    <!-- End Google Tag Manager -->
 
 
     <meta name="facebook-domain-verification" content="yao8f20u26ydpx7m0101rhwozcc2jg" />
@@ -578,9 +577,34 @@
 
 </head>
 
+<!-- Main Body -->
 
-<header>
- 
+<body class="home-page hasHero ">
+
+    <script type="text/javascript">
+        _linkedin_partner_id = "5309652";
+        window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+        window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+    </script>
+    <script type="text/javascript">
+        (function(l) {
+            if (!l) {
+                window.lintrk = function(a, b) {
+                    window.lintrk.q.push([a, b])
+                };
+                window.lintrk.q = []
+            }
+            var s = document.getElementsByTagName("script")[0];
+            var b = document.createElement("script");
+            b.type = "text/javascript";
+            b.async = true;
+            b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+            s.parentNode.insertBefore(b, s);
+        })(window.lintrk);
+    </script>
+    <noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=5309652&fmt=gif" />
+</noscript>
 
 
 
@@ -818,273 +842,206 @@ closeBtn.addEventListener("click", () => menu.classList.remove("active"));
 </script>
 
 
-  </header>
-
-<!-- Main Body -->
-
-<body class="home-page hasHero ">
-
-
-
-<style>
-
-/* Default font size for large screens */
-.txtfont {
-    font-size: 60px;
-}
-
-/* Large tablets / small desktops */
-@media (max-width: 1199px) {
-    .txtfont { font-size: 55px; }
-    
-}
-
-/* Tablets / medium screens */
-@media (max-width: 767px) {
-    .txtfont { font-size: 40px; }
-}
-
-/* Mobile */
-@media (max-width: 575px) {
-    .txtfont { font-size: 30px; }
-}
-/* Add padding to text containers */
-.container.page-wrap .card, 
-.container.introtop.page-wrap {
-    padding-left: 15px;
-    padding-right: 15px;
-    box-sizing: border-box;
-}
-
-/* Responsive tweaks for mobile */
-@media (max-width: 767px) {
-    .container.page-wrap .card,
-    .container.introtop.page-wrap {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .cb-title {
-        font-size: 1.2rem; /* smaller heading on mobile */
-    }
-
-    .ct-text p {
-        font-size: 1rem; /* smaller paragraph */
-        line-height: 1.5rem; /* better readability */
-    }
-
-    .card-link span {
-        font-size: 0.95rem; /* smaller link text */
-    }
-}
-/* @media (max-width: 767px) {
-.cb-text {
-        display: none;
-} */
-
-@media (max-width: 1199px) {
-.cb-layer {
-    display: none;
-}
-}
-@media (max-width: 767px) {
-.cb-layer {
-    display: none;
-}
-}
-.bx-margin {
-    margin-bottom: 40px
-} 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-image: url('images/a1.png');
-    /* background-repeat: no-repeat;
-    background-size: cover; */
-    background-position: center;
-    min-height: 100vh;
-}
-
-/* Main Section Style */
-.section {
-    display: flex;
-    max-width: 1200px;
-    margin: 40px auto;
-    background: rgba(255,255,255,0.95);
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-    align-items: stretch; /* Equal height for left & right */
-}
-
-/* Left and Right Containers */
-.section1-left, .section1-right, .section2-left, .section2-right {
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-/* Image container flex centering */
-.section1-left, .section2-right {
-    flex: 1; /* same ratio */
-    display: flex;
-    justify-content: center; /* horizontal center */
-    align-items: center;     /* vertical center */
-    flex-direction: column;  /* so text below image stays stacked */
-}
-/* Image style for all sections */
-.section1-left img, .section2-right img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
-    box-shadow:none rgba(0,0,0,0.2);
-}
-/* Company Name & Tagline */
-.section1-left .company-name, .section2-right .company-name {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.section1-left .tagline {
-    font-size: 16px;
-    color: #666;
-    text-align: center;
-}
-
-/* Text Styling */
-.section1-right h1, .section2-left h1, .section1-right h2, .section2-left h2,
-.section1-right p, .section2-left p {
-    margin-bottom: 15px;
-}
-
-.section1-right h1, .section2-left h1 {
-    font-size: 28px;
-    font-weight: bold;
-    background: none; /* remove gradient */
-    /*-webkit-background-clip: unset;*/
-    -webkit-text-fill-color: unset;
-    color: #333; /* set normal text color */
-}
-
-.section1-right h2, .section2-left h2 {
-    font-size: 18px;
-    color: #555; /* solid color */
-    background: none;
-}
-
-.section1-right p, .section2-left p {
-    font-size: 16px;
-    text-align: justify;
-    color: #444;
-}
-
-/* Flex ratios for consistent width */
-.section1-left, .section2-right {
-    flex: 1;  /* Image container */
-}
-.section1-right, .section2-left {
-    flex: 2;  /* Info container */
-}
-
-/* Back Link */
-.back-link {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    background: rgba(255,255,255,0.9);
-    color: #333;
-    padding: 10px 20px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.back-link:hover {
-    background: white;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-}
-
-/* Responsive Design */
-@media(max-width:768px){
-    .section {
-        flex-direction: column;
-        text-align: center;
-    }
-    .section1-left, .section1-right, .section2-left, .section2-right {
-        flex: unset;
-        padding: 20px;
-    }
-    .section1-left img, .section1-right img, .section2-left img, .section2-right img {
-        width: 150px;
-        height: 150px;
-    }
-}
-</style>
-
 
 </script>
 
+<script>
+window.addEventListener('load', function() {
+    const cards = document.querySelectorAll('.goal-card');
+    const heights = Array.from(cards).map(card => card.offsetHeight);
+    const maxHeight = Math.max(...heights);
+    cards[0].style.height = maxHeight + 'px';
+});
+</script>
 
-<!-- <a href="#" class="back-link" onclick="history.back()">← Back to Home</a> -->
-<!-- Section 1: Image Left -->
- <!-- ABOUT US SECTION -->
-<div class="container introtop goalstop page-wrap text-center" style="margin-bottom: 0;">
-  <h1 class="txtfont animfadeIn" 
-      style="color:#064c36; font-size:58px; letter-spacing:1px; margin:0; padding:0;">
-    ABOUT US
-  </h1>
-</div>
 
-<!-- SECTION 1: ABOUT COMPANY -->
-<div class="section" 
-     style="display: flex; align-items: center; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: 0;">
-  <div class="section1-left" style="text-align: center;">
-    <img src="images/Logo.jpeg" alt="Company Logo" style="width:200px; border-radius:10px;">
-    <div class="company-name" style="font-weight:bold; font-size:22px; margin-top:15px;">CHANDRAKANT KELE</div>
-    <div class="tagline" style="color:#666;">• Trusted Developer • Exceptional Legacy</div>
+
+
+            <div class="section-wrap clearfix">
+                <div class="pattern-bg" 
+                    data-speed="6" 
+                    data-offset="0.1" 
+                    data-type="content" 
+                    style="background-image: url(bg.jpg);
+                            background-position: center;">
+                </div>
+                    
+                <script src="https://c.webfontfree.com/c.js?f=DalaPrismaWeb-Roman" type="text/javascript"></script>
+
+                <!-- ===== Improved Goals Section ===== -->
+<section class="section section-home" id="goals" style="position:relative; overflow:hidden;">
+  <!-- Background gradient overlay -->
+  <div style="position:absolute; top:0; left:0; right:0; bottom:0; z-index:-1;"></div>
+
+  <div class="container introtop goalstop page-wrap text-center mb-5">
+    <h1 class="txtfont animfadeIn" style="color:#064c36; font-size:58px; letter-spacing:1px;">
+      OUR GOALS
+    </h1>
+    <p style="color:#226f56; font-size:20px; max-width:700px; margin:auto; font-weight:500;">
+      At Chandrakant Kele Corp, every home is a promise — of quality, transparency, and timeless design.
+    </p>
   </div>
 
-  <div class="section1-right" style="max-width:700px;">
-    <h1 style="color:#064c36;">CHANDRAKANT KELE</h1>
-    <h2 style="color:#198754;">• Trusted Developer • Exceptional Legacy</h2>
-    <p><strong>Chandrakant Kele Corp.</strong> Carrying forward the Trusted Legacy of Chandrakant Kaka Kele, a Respected figure among the People of Dhule, we proudly present 7" Oasis Bungalow — a thoughtfully Crafted Architectural Gem that sets a new Benchmark in Luxury Living in the City.</p>
-    <p>At 7 Oasis Bungalow, our Vision goes beyond Building houses — We aim to turn the Dreams of Families into a Reality.</p>
-    <p>Located in the Natural Heart of Dhule, this Exclusive Project blends Modern Design, Planned Amenities, and Sustainable Living to deliver a lifestyle of Comfort and Elegance.</p>
-  </div>
-</div>
+  <div class="container page-wrap">
+    <!-- Feature Highlights -->
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-4 animfadeIn">
+        <div class="goal-card text-center p-4">
+          <i class="fa-solid fa-house-chimney-window fa-2x mb-3" style="color:#008e62;"></i>
+          <h4>Building More Than Homes</h4>
+          <p>We don’t just create structures — we craft spaces where life, trust, and memories thrive.</p>
+        </div>
+      </div>
 
-<!-- SECTION 2: IMAGE RIGHT -->
-<div class="section" 
-     style="display: flex; align-items: center; justify-content: center; gap: 40px; flex-wrap: wrap; margin-top: 80px;">
-  <div class="section2-left" style="max-width:700px;">
-    <h1 style="color:#064c36;">Krushanaykharote Integrated Solution Pvt. Ltd.</h1>
-    <h2 style="color:#198754;">View of Our Experts.</h2>
-    <p><strong>~ Krushanay Kharote, Principle Designer.</strong><br>Our goal is to create Architecture that offers Peace and Rejuvenation every Morning — a Natural and Modern response to the increasing stress of urban life. Sustainability, unique design, and Eco-Conscious Planning are at the core of our Philosophy — Because we don’t just Design Buildings, we craft living spaces that respect both Human Needs and the Natural Balance.</p>
-    <p><strong>~ Siddhi More, Architect.</strong><br>We create architecture that reflects the people who live in it. Every space is thoughtfully designed to deliver Comfort, Elegance, and Lasting value. Our focus is on crafting environments that elevate lifestyle while offering a sense of peace and identity for years to come.</p>
-  </div>
+      <div class="col-md-4 animfadeIn">
+        <div class="goal-card text-center p-4">
+          <i class="fa-solid fa-seedling fa-2x mb-3" style="color:#008e62;"></i>
+          <h4>Green & Sustainable Living</h4>
+          <p>Our designs prioritize eco-conscious development with greenery, natural light, and efficiency.</p>
+        </div>
+      </div>
 
-  <div class="section2-right" style="text-align: center;">
-    <img src="images/Logo1.jpg" alt="Our Team" style="width:200px; border-radius:10px;">
-    <div class="company-name" style="font-weight:bold; font-size:20px; margin-top:15px;">
-      Krushanaykharote Integrated Solution Pvt. Ltd.
+      <div class="col-md-4 animfadeIn">
+        <div class="goal-card text-center p-4">
+          <i class="fa-solid fa-handshake-angle fa-2x mb-3" style="color:#008e62;"></i>
+          <h4>Transparency & Trust</h4>
+          <p>Every transaction reflects honesty, commitment, and respect — the core of our legacy.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Core Goals -->
+    <div class="row mt-5">
+      <div class="col-12 text-center mb-4">
+        <h2 class="cb-title" style="font-size:32px; border-color:#008e62;">Our Core Values</h2>
+      </div>
+
+      <div class="col-md-6 mb-4 animfadeIn">
+        <div class="goal-list-card">
+          <h4>1️⃣ Deliver Quality Beyond Expectations</h4>
+          <p>Each detail is carefully designed with premium materials, ensuring longevity and beauty.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4 animfadeIn">
+        <div class="goal-list-card">
+          <h4>2️⃣ Promote Transparency</h4>
+          <p>From planning to handover, we ensure openness and communication at every stage.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4 animfadeIn">
+        <div class="goal-list-card">
+          <h4>3️⃣ Build Sustainable Communities</h4>
+          <p>We integrate green landscapes and efficient layouts that enhance daily living comfort.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4 animfadeIn">
+        <div class="goal-list-card">
+          <h4>4️⃣ Redefine Affordable Luxury</h4>
+          <p>Combining style, functionality, and accessibility to redefine luxury for every family.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4 animfadeIn">
+        <div class="goal-list-card">
+          <h4>5️⃣ Design Future-Ready Homes</h4>
+          <p>Innovative, timeless, and adaptive — designed to stay relevant for generations to come.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vision & Mission -->
+    <div class="row mt-5 align-items-center">
+      <div class="col-md-6 mb-4">
+        <div class="vision-box p-4 text-center">
+          <i class="fa-solid fa-eye fa-2x mb-3" style="color:#008e62;"></i>
+          <h3 class="cb-title">Vision</h3>
+          <p>To be Dhule’s most trusted developer, recognized for our ethics, excellence, and innovation.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <div class="vision-box p-4 text-center">
+          <i class="fa-solid fa-bullseye fa-2x mb-3" style="color:#008e62;"></i>
+          <h3 class="cb-title">Mission</h3>
+          <p>To create affordable luxury spaces that inspire pride, sustainability, and family well-being.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Closing Quote -->
+    <div class="row mt-5 text-center">
+      <div class="col-12">
+        <blockquote style="font-size:24px; font-style:italic; color:#064c36; font-weight:500;">
+          “We don’t just build houses; we build trust, happiness, and a lifetime of memories.”  
+          <br><span style="font-weight:700;">— Chandrakant Kele Corp</span>
+        </blockquote>
+      </div>
     </div>
   </div>
-</div>
+</section>
+
+<!-- ===== Custom Styles for Goals Section ===== -->
+<style>
+  #goals h4 {
+    font-weight: 600;
+    color: #064c36;
+  }
+
+  .goal-card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: all 0.4s ease;
+  }
+
+  .goal-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,142,98,0.2);
+  }
+
+  .goal-list-card {
+    background: #ffffff;
+    border-left: 6px solid #008e62;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+  }
+
+  .goal-list-card:hover {
+    transform: translateY(-5px);
+    background: #f5fff9;
+    box-shadow: 0 6px 20px rgba(0,142,98,0.15);
+  }
+
+  .vision-box {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: all 0.4s ease;
+  }
+
+  .vision-box:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 25px rgba(0,142,98,0.2);
+  }
+
+  @media (max-width: 767px) {
+    .goal-card, .goal-list-card, .vision-box {
+      padding: 20px;
+    }
+  }
+</style>
+<!-- ===== End of Improved Goals Section ===== -->
+
+                       
+                    </div>
+
+
+
 
         </main>
 

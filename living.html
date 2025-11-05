@@ -703,10 +703,9 @@
 <header class="header-main d-none d-xl-block" style="background: transparent; padding: 10px 40px;">
   <div class="container-fluid">
     <div class="row align-items-center justify-content-between">
-
-      <!-- LOGO (visible on desktop) -->
+      <!-- LOGO -->
       <div class="col-auto">
-        <a href="index.html" class="brand-logo">
+        <a href="index_new.html" class="brand-logo">
           <img src="ck_logo.jpg" alt="Logo" style="height:65px; width:auto; object-fit:contain;">
         </a>
       </div>
@@ -714,7 +713,7 @@
       <!-- NAV LINKS -->
       <div class="col">
         <nav class="main-nav">
-          <ul class="nav align-items-center justify-content-end" style="list-style:none; margin:0; padding:0; background-color:transparent;">
+          <ul class="nav align-items-center justify-content-end" style="list-style:none; margin:0; padding:0;">
             <style>
               .nav-link {
                 color: white;
@@ -724,7 +723,7 @@
               }
 
               .nav-link:hover {
-                color: gold;
+                color: gold !important;
               }
 
               .nav-icon {
@@ -736,46 +735,51 @@
               }
 
               .nav-link:hover .nav-icon {
-                fill: gold;
+                fill: gold !important;
               }
-              .navbar-link:hover {   /* changes made here for the nav bar color */
-                color: gold !important;
-                
+
+              .mobile_new{
+                color:#000 !important
               }
+
+             
             </style>
 
             <!-- HOME ICON -->
             <li style="display:inline-block; margin:0 10px;">
-              <a href="index.html" class="nav-link" style="font-weight:bold;">
+              <a href="index_new.html" class="nav-link" style="font-weight:bold;">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.42 23.91" class="nav-icon">
                   <path d="M16.33,0,1.55,14.51H0L14.54.23A.81.81,0,0,1,15.11,0Zm2.56.25a.56.56,0,0,0-.76,0L3.58,14.51H5.13L18.51,1.4,31.87,14.51h1.55Zm-1.3,3.84L28.21,14.51h1.56L18.35,3.31Zm8.56,18.73H20.87V15.67H12.5v7.15H7.21V14.6L6.12,15.66v8.25h7.47V16.75h6.19v7.16h7.46V15.6l-1.09-1.06Z"/>
                 </svg>
               </a>
             </li>
 
-            <!-- OTHER LINKS -->
-            <li style="display:inline-block; margin:0 10px;"><a href="info.html" class="navbar-link" style="font-weight:bold;">Bungalows Info</a></li>
-            <li style="display:inline-block; margin:0 10px;"><a href="about.html" class="navbar-link" style="font-weight:bold;">About</a></li>
-            <li style="display:inline-block; margin:0 10px;"><a href="goals.html" class="navbar-link" style="font-weight:bold;">Goals</a></li>
-            <li style="display:inline-block; margin:0 10px;"><a href="contact.html" class="navbar-link" style="font-weight:bold;">Contact</a></li>
+            <li style="display:inline-block; margin:0 10px;"><a href="bunglow_info.html" class="nav-link" style="font-weight:bold;">Bungalows Info</a></li>
+            <li style="display:inline-block; margin:0 10px;"><a href="about.html" class="nav-link" style="font-weight:bold;">About</a></li>
+            <li style="display:inline-block; margin:0 10px;"><a href="goals_new.html" class="nav-link" style="font-weight:bold;">Goals</a></li>
+            <li style="display:inline-block; margin:0 10px;"><a href="contact_new.html" class="nav-link" style="font-weight:bold;">Contact</a></li>
           </ul>
         </nav>
       </div>
     </div>
   </div>
 </header>
-<!-- MOBILE NAVBAR (VISIBLE ON SMALL SCREENS) -->
-<header class="header-mobile d-xl-none" style="position:fixed; top:0; left:0; right:0; z-index:11001; background:#fff; box-shadow:0 2px 8px rgba(0,0,0,0.1); padding:10px 20px; display:flex; justify-content:space-between; align-items:center;">
-  <a href="index.html" class="brand-logo">
-    <img src="images/ck_logo.jpg" alt="Logo" style="height:50px; width:auto;">
-  </a>
-  <div id="menuToggle" class="hm">
-    <i class="fa fa-bars" style="font-size:28px; color:#008e62;"></i>
+
+<!-- MOBILE NAV (below XL) -->
+<header class="header-mobile d-xl-none" style="background: white; padding: 10px 20px; position: relative; z-index: 1;">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+    <!-- LOGO -->
+    <a href="index_new.html" class="brand-nav">
+      <img src="ck_logo.jpg" alt="Logo" style="height: 45px !important; width:auto; object-fit:contain;">
+    </a>
+
+    <!-- MENU TOGGLE -->
+    <div class="hm" id="menuToggle">☰</div>
   </div>
 </header>
 
 <!-- MOBILE MENU -->
-<nav id="menumob" class="mobile-menu d-xl-none">
+<nav id="menumob" class="mobile-menu d-xl-none mobile_new" style="z-index: 999;">
   <div class="close-menu" id="menuClose">✕</div>
   <ul>
     <li>
@@ -785,15 +789,35 @@
         </svg>
       </a>
     </li>
-    <li><a href="info.html" style="font-weight:bold;">Bungalows Info</a></li>
+    <li><a href="bunglow_info.html" style="font-weight:bold;">Bungalows Info</a></li>
     <li><a href="about.html" style="font-weight:bold;">About</a></li>
-    <li><a href="goals.html" style="font-weight:bold;">Goals</a></li>
-    <li><a href="contact.html" style="font-weight:bold;">Contact</a></li>
+    <li><a href="goals_new.html" style="font-weight:bold;">Goals</a></li>
+    <li><a href="contact_new.html" style="font-weight:bold;">Contact</a></li>
   </ul>
 </nav>
 
+<!-- STYLES -->
 <style>
-/* MOBILE MENU STYLING */
+  /* Ensure mobile menu text and icons are black on mobile */
+@media (max-width: 991px) {
+  #menumob {
+    background-color: white; /* optional: white background for contrast */
+    color: black !important;
+  }
+
+  #menumob a {
+    color: black !important;
+  }
+
+  #menumob svg path {
+    fill: black !important;
+  }
+
+  #menumob .close-menu {
+    color: black !important;
+  }
+}
+
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -803,7 +827,7 @@
   background: #ffffff;
   box-shadow: -2px 0 6px rgba(0,0,0,0.15);
   transition: right 0.3s ease;
-  z-index: 9999;
+  z-index: 9998;
   padding: 60px 20px 20px 20px;
 }
 .mobile-menu ul {
@@ -825,6 +849,8 @@
 .hm {
   font-size: 28px;
   cursor: pointer;
+  user-select: none;
+  z-index: 10000;
 }
 .close-menu {
   position: absolute;
@@ -842,45 +868,45 @@
 
 /* Responsive logo scaling */
 @media (max-width: 1199px) {
-  .brand-logo img {
-    height: 55px;
-  }
+  .brand-logo img { height: 55px; }
 }
 @media (max-width: 767px) {
-  .brand-logo img,
-  .brand-nav img {
-    height: 45px;
-  }
+  .brand-logo img, .brand-nav img { height: 45px; }
 }
 </style>
 
+<!-- SCRIPT -->
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const menuToggle = document.getElementById("menuToggle");
-  const menuClose = document.getElementById("menuClose");
-  const mobileMenu = document.getElementById("menumob");
+  const toggle = document.querySelector("#menuToggle");
+  const closeBtn = document.querySelector("#menuClose");
+  const menu = document.querySelector("#menumob");
+  const links = menu.querySelectorAll("a");
 
-  // Open menu
-  menuToggle.addEventListener("click", function () {
-    mobileMenu.classList.add("active");
-    document.body.classList.add("menu-open");
+  if (!toggle || !menu) return;
+
+  // --- Open Menu ---
+  toggle.addEventListener("click", (e) => {
+    e.stopPropagation();
+    menu.classList.add("active");
+    document.body.style.overflow = "hidden";
   });
 
-  // Close menu
-  menuClose.addEventListener("click", function () {
-    mobileMenu.classList.remove("active");
-    document.body.classList.remove("menu-open");
+  // --- Close Menu ---
+  const closeMenu = () => {
+    menu.classList.remove("active");
+    document.body.style.overflow = "auto";
+  };
+
+  closeBtn.addEventListener("click", closeMenu);
+
+  links.forEach(link => {
+    link.addEventListener("click", closeMenu);
   });
 
-  // Optional: close menu if user taps outside
-  document.addEventListener("click", function (event) {
-    if (
-      mobileMenu.classList.contains("active") &&
-      !mobileMenu.contains(event.target) &&
-      !menuToggle.contains(event.target)
-    ) {
-      mobileMenu.classList.remove("active");
-      document.body.classList.remove("menu-open");
+  document.addEventListener("click", (e) => {
+    if (menu.classList.contains("active") && !menu.contains(e.target) && e.target !== toggle) {
+      closeMenu();
     }
   });
 });

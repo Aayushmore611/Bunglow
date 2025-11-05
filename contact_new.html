@@ -61,14 +61,14 @@
                 font-family: Arial, sans-serif;
                 }
 
-                  .footer-container {
+                .footer-container {
                     max-width: 1200px;
                     margin: auto;
                     display: grid;
                     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
                     gap: 30px;
                     }
-                
+
                     .footer h2,
                     .footer h3 {
                         color: #fff;
@@ -163,7 +163,7 @@
 
         .hero-Section {
             width: 100%;
-            /* height: 100vh; Full screen height */
+            height: 100vh; /* Full screen height */
             /* background: url("video.mp4") no-repeat center center; */
             background-size: cover; /* Ensures image covers entire section */
             display: flex;
@@ -202,7 +202,6 @@
         .contact-form select option {
             background-color: #9CC6B5 !important;
         }
-        
 
         .pt-title {
             font-weight: 500;
@@ -313,32 +312,16 @@
         }
 
         .main-nav .nav>li:hover a .cls-1 {
-            fill: #353435;
+            fill: #008e62;
         }
 
         .hasHero .nav>li a .cls-1 {
-            fill: white  !important;
+            fill: #fff !important;
         }
 
         .header-main.header-active .main-nav .nav>li>a .cls-1 {
-            fill: white !important;
+            fill: #353435 !important;
         }
-        .header-main {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  /* height: 50px; */
-  z-index: 1000;
-
-}
-
-
-/* Add padding-top to body to prevent overlap with fixed navbar */
-
-    .container-fluid.d-flex.justify-content-between.align-items-center.py-2 {
-    background: white;
-}
 
         .header-main.header-active .main-nav .nav>li:hover>a .cls-1 {
             fill: #008e62 !important;
@@ -517,7 +500,23 @@
     }
     </style>
 
-
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-N6S5KK');
+    </script>
+    <!-- End Google Tag Manager -->
 
 
     <meta name="facebook-domain-verification" content="yao8f20u26ydpx7m0101rhwozcc2jg" />
@@ -578,9 +577,35 @@
 
 </head>
 
+<!-- Main Body -->
 
-<header>
- 
+<body class="home-page hasHero ">
+
+    <script type="text/javascript">
+        _linkedin_partner_id = "5309652";
+        window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+        window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+    </script>
+    <script type="text/javascript">
+        (function(l) {
+            if (!l) {
+                window.lintrk = function(a, b) {
+                    window.lintrk.q.push([a, b])
+                };
+                window.lintrk.q = []
+            }
+            var s = document.getElementsByTagName("script")[0];
+            var b = document.createElement("script");
+            b.type = "text/javascript";
+            b.async = true;
+            b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+            s.parentNode.insertBefore(b, s);
+        })(window.lintrk);
+    </script>
+    <noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=5309652&fmt=gif" />
+</noscript>
+
 
 
 
@@ -818,16 +843,47 @@ closeBtn.addEventListener("click", () => menu.classList.remove("active"));
 </script>
 
 
-  </header>
-
-<!-- Main Body -->
-
-<body class="home-page hasHero ">
-
-
-
 <style>
-
+/* Mobile menu CSS */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -260px;
+  width: 250px;
+  height: 100%;
+  background: #fff;
+  box-shadow: -2px 0 6px rgba(0,0,0,0.15);
+  transition: right 0.3s ease;
+  z-index: 9999;
+  padding: 60px 20px 20px 20px;
+}
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.mobile-menu ul li {
+  margin: 15px 0;
+}
+.mobile-menu ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #333;
+}
+.mobile-menu.active {
+  right: 0;
+}
+.hm {
+  font-size: 28px;
+  cursor: pointer;
+}
+.close-menu {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
 /* Default font size for large screens */
 .txtfont {
     font-size: 60px;
@@ -855,7 +911,12 @@ closeBtn.addEventListener("click", () => menu.classList.remove("active"));
     padding-right: 15px;
     box-sizing: border-box;
 }
+.contacttop{
+    background-color: transparent;
+    /* padding-top: 187px; */
+    padding-bottom: 0px !important;
 
+}
 /* Responsive tweaks for mobile */
 @media (max-width: 767px) {
     .container.page-wrap .card,
@@ -896,195 +957,179 @@ closeBtn.addEventListener("click", () => menu.classList.remove("active"));
     margin-bottom: 40px
 } 
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* CONTACT SECTION */
+/* CONTACT SECTION */
+.contact-section {
+  padding: 100px 20px;
+  text-align: center;
+}
+.contact-container {
+  backdrop-filter: blur(15px);
+  background: #111827;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  padding: 40px 30px;
+  max-width: 600px;
+  width: 90%;
+  margin: auto;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+.contact-container h2 {
+  font-size: 2em;
+  margin-bottom: 8px;
+  color: #00ff99;
+}
+.contact-container p {
+  margin-bottom: 30px;
+  color: #ddd;
+  font-size: 15px;
 }
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-image: url('images/a1.png');
-    /* background-repeat: no-repeat;
-    background-size: cover; */
-    background-position: center;
-    min-height: 100vh;
+/* FORM STYLING */
+.form-group {
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 12px 12px 12px 42px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  color: #222;
+  background: #fff;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+  height: 45px;
+  line-height: 1.4;
+}
+.form-group select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%23666' height='18' viewBox='0 0 24 24' width='18' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 14px;
+  cursor: pointer;
+}
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  box-shadow: 0 0 0 2px #00c48c;
+}
+.form-group textarea {
+  resize: none;
+  height: auto;
+  padding-top: 12px;
+}
+.form-group i {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #666;
+  font-size: 16px;
+}
+.contact-container button {
+  width: 100%;
+  background: linear-gradient(90deg, #00ff99, #00c48c);
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+}
+.contact-container button:hover {
+  background: linear-gradient(90deg, #00c48c, #00ff99);
+  transform: scale(1.02);
+}
+#formStatus {
+  display: none;
+  color: #00ff99;
+  margin-top: 15px;
+  font-weight: 600;
 }
 
-/* Main Section Style */
-.section {
-    display: flex;
-    max-width: 1200px;
-    margin: 40px auto;
-    background: rgba(255,255,255,0.95);
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-    align-items: stretch; /* Equal height for left & right */
-}
-
-/* Left and Right Containers */
-.section1-left, .section1-right, .section2-left, .section2-right {
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-/* Image container flex centering */
-.section1-left, .section2-right {
-    flex: 1; /* same ratio */
-    display: flex;
-    justify-content: center; /* horizontal center */
-    align-items: center;     /* vertical center */
-    flex-direction: column;  /* so text below image stays stacked */
-}
-/* Image style for all sections */
-.section1-left img, .section2-right img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
-    box-shadow:none rgba(0,0,0,0.2);
-}
-/* Company Name & Tagline */
-.section1-left .company-name, .section2-right .company-name {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.section1-left .tagline {
-    font-size: 16px;
-    color: #666;
-    text-align: center;
-}
-
-/* Text Styling */
-.section1-right h1, .section2-left h1, .section1-right h2, .section2-left h2,
-.section1-right p, .section2-left p {
-    margin-bottom: 15px;
-}
-
-.section1-right h1, .section2-left h1 {
-    font-size: 28px;
-    font-weight: bold;
-    background: none; /* remove gradient */
-    /*-webkit-background-clip: unset;*/
-    -webkit-text-fill-color: unset;
-    color: #333; /* set normal text color */
-}
-
-.section1-right h2, .section2-left h2 {
-    font-size: 18px;
-    color: #555; /* solid color */
-    background: none;
-}
-
-.section1-right p, .section2-left p {
-    font-size: 16px;
-    text-align: justify;
-    color: #444;
-}
-
-/* Flex ratios for consistent width */
-.section1-left, .section2-right {
-    flex: 1;  /* Image container */
-}
-.section1-right, .section2-left {
-    flex: 2;  /* Info container */
-}
-
-/* Back Link */
-.back-link {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    background: rgba(255,255,255,0.9);
-    color: #333;
-    padding: 10px 20px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.back-link:hover {
-    background: white;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-}
-
-/* Responsive Design */
-@media(max-width:768px){
-    .section {
-        flex-direction: column;
-        text-align: center;
-    }
-    .section1-left, .section1-right, .section2-left, .section2-right {
-        flex: unset;
-        padding: 20px;
-    }
-    .section1-left img, .section1-right img, .section2-left img, .section2-right img {
-        width: 150px;
-        height: 150px;
-    }
-}
 </style>
 
 
 </script>
 
 
-<!-- <a href="#" class="back-link" onclick="history.back()">← Back to Home</a> -->
-<!-- Section 1: Image Left -->
- <!-- ABOUT US SECTION -->
-<div class="container introtop goalstop page-wrap text-center" style="margin-bottom: 0;">
-  <h1 class="txtfont animfadeIn" 
-      style="color:#064c36; font-size:58px; letter-spacing:1px; margin:0; padding:0;">
-    ABOUT US
-  </h1>
+
+       
+            <div class="section-wrap clearfix">
+                <div class="pattern-bg" 
+                    data-speed="6" 
+                    data-offset="0.1" 
+                    data-type="content" 
+                    style="background-image: url(bg.jpg);
+                            background-position: center;">
+                </div>
+                
+                <script src="https://c.webfontfree.com/c.js?f=DalaPrismaWeb-Roman" type="text/javascript"></script>
+                <section class="section section-home">
+
+                    <div class="container introtop goalstop page-wrap text- mb-5">
+    <h1 class="txtfont animfadeIn" style="color:#064c36; font-size:58px; letter-spacing:1px;">
+      CONTACT FORM
+    </h1>
+    
+    
+     
+
+<div class="container page-wrap">
+  <div class="contact-container">
+    <h2>Get in Touch</h2>
+    
+    <p>Have a query or want to collaborate? Send us a message — we’ll respond shortly.</p>
+
+    <form id="contactForm">
+      <div class="form-group">
+        <i class="fas fa-user"></i>
+        <input type="text" id="name" name="name" placeholder="Your Name" required />
+      </div>
+
+      <div class="form-group">
+        <i class="fas fa-phone"></i>
+        <input type="text" id="phone" name="phone" placeholder="Your Phone Number" required />
+      </div>
+
+      <!-- 💰 Perfectly aligned Budget Dropdown -->
+      <div class="form-group">
+        <i class="fas fa-wallet"></i>
+        <select id="budget" name="budget" required>
+          <option value="">Select Your Budget </option>
+          <option value="50 to 55 Lakh's">50 to 55 Lakh's</option>
+          <option value="50 to 55 Lakh's">55 to 60 Lakh's</option>
+          <option value="60 to 65 Lakh's">60 to 65 Lakh's</option>
+          <option value="65 to 70 Lakh's">65 to 70 Lakh's</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <i class="fas fa-comment"></i>
+        <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+      </div>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <p id="formStatus">Message sent successfully!</p>
+  </div>
 </div>
 
-<!-- SECTION 1: ABOUT COMPANY -->
-<div class="section" 
-     style="display: flex; align-items: center; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: 0;">
-  <div class="section1-left" style="text-align: center;">
-    <img src="images/Logo.jpeg" alt="Company Logo" style="width:200px; border-radius:10px;">
-    <div class="company-name" style="font-weight:bold; font-size:22px; margin-top:15px;">CHANDRAKANT KELE</div>
-    <div class="tagline" style="color:#666;">• Trusted Developer • Exceptional Legacy</div>
-  </div>
+ </div>
 
-  <div class="section1-right" style="max-width:700px;">
-    <h1 style="color:#064c36;">CHANDRAKANT KELE</h1>
-    <h2 style="color:#198754;">• Trusted Developer • Exceptional Legacy</h2>
-    <p><strong>Chandrakant Kele Corp.</strong> Carrying forward the Trusted Legacy of Chandrakant Kaka Kele, a Respected figure among the People of Dhule, we proudly present 7" Oasis Bungalow — a thoughtfully Crafted Architectural Gem that sets a new Benchmark in Luxury Living in the City.</p>
-    <p>At 7 Oasis Bungalow, our Vision goes beyond Building houses — We aim to turn the Dreams of Families into a Reality.</p>
-    <p>Located in the Natural Heart of Dhule, this Exclusive Project blends Modern Design, Planned Amenities, and Sustainable Living to deliver a lifestyle of Comfort and Elegance.</p>
-  </div>
-</div>
-
-<!-- SECTION 2: IMAGE RIGHT -->
-<div class="section" 
-     style="display: flex; align-items: center; justify-content: center; gap: 40px; flex-wrap: wrap; margin-top: 80px;">
-  <div class="section2-left" style="max-width:700px;">
-    <h1 style="color:#064c36;">Krushanaykharote Integrated Solution Pvt. Ltd.</h1>
-    <h2 style="color:#198754;">View of Our Experts.</h2>
-    <p><strong>~ Krushanay Kharote, Principle Designer.</strong><br>Our goal is to create Architecture that offers Peace and Rejuvenation every Morning — a Natural and Modern response to the increasing stress of urban life. Sustainability, unique design, and Eco-Conscious Planning are at the core of our Philosophy — Because we don’t just Design Buildings, we craft living spaces that respect both Human Needs and the Natural Balance.</p>
-    <p><strong>~ Siddhi More, Architect.</strong><br>We create architecture that reflects the people who live in it. Every space is thoughtfully designed to deliver Comfort, Elegance, and Lasting value. Our focus is on crafting environments that elevate lifestyle while offering a sense of peace and identity for years to come.</p>
-  </div>
-
-  <div class="section2-right" style="text-align: center;">
-    <img src="images/Logo1.jpg" alt="Our Team" style="width:200px; border-radius:10px;">
-    <div class="company-name" style="font-weight:bold; font-size:20px; margin-top:15px;">
-      Krushanaykharote Integrated Solution Pvt. Ltd.
-    </div>
-  </div>
-</div>
 
         </main>
 
@@ -1138,7 +1183,7 @@ body {
     © 2025 CK Corp. All rights reserved.
   </div>
 </footer>
-    </div>
+    
 
 
 <!-- Load EmailJS SDK -->
@@ -1248,6 +1293,48 @@ body {
     
     <script src="https://www.vianaar.com/js-vianaar/jquery.clever-infinite-scroll.js"></script>
 
+    <!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+  (function(){
+    emailjs.init({ publicKey: "YOUR_PUBLIC_KEY" });
+  })();
+
+  document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const form = this;
+    const status = document.getElementById("formStatus");
+    const btn = form.querySelector("button");
+
+    btn.disabled = true;
+    btn.textContent = "Sending...";
+
+    emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+      name: form.name.value,
+      phone: form.phone.value,
+      budget: form.budget.value,
+      message: form.message.value
+    })
+    .then(() => {
+      status.style.display = "block";
+      status.style.color = "#00ff99";
+      status.textContent = "✅ Message sent successfully!";
+      form.reset();
+    })
+    .catch(() => {
+      status.style.display = "block";
+      status.style.color = "red";
+      status.textContent = "❌ Failed to send message.";
+    })
+    .finally(() => {
+      btn.disabled = false;
+      btn.textContent = "Send Message";
+    });
+  });
+</script>
+
 </body>
 
-</html>
+</html>   
