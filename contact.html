@@ -607,6 +607,8 @@
 </noscript>
 
 
+
+
 <!-- DESKTOP NAV (XL and above) -->
 <header class="header-main d-none d-xl-block" style="background: transparent; padding: 10px 40px;">
   <div class="container-fluid">
@@ -614,8 +616,8 @@
 
       <!-- LOGO (visible on desktop) -->
       <div class="col-auto">
-        <a href="index.html" class="brand-logo">
-          <img src="images/ck_logo.jpg" alt="Logo" style="height:105px; width:auto; object-fit:contain;">
+        <a href="index_new.html" class="brand-logo">
+          <img src="ck_logo.jpg" alt="Logo" style="height:65px; width:auto; object-fit:contain;">
         </a>
       </div>
 
@@ -646,6 +648,7 @@
               .nav-link:hover .nav-icon {
                 fill: gold;
               }
+
               .navbar-link:hover {   /* changes made here for the nav bar color */
                 color: gold !important;
                 
@@ -654,7 +657,7 @@
 
             <!-- HOME ICON -->
             <li style="display:inline-block; margin:0 10px;">
-              <a href="index.html" class="nav-link" style="font-weight:bold;">
+              <a href="index_new.html" class="nav-link" style="font-weight:bold;">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.42 23.91" class="nav-icon">
                   <path d="M16.33,0,1.55,14.51H0L14.54.23A.81.81,0,0,1,15.11,0Zm2.56.25a.56.56,0,0,0-.76,0L3.58,14.51H5.13L18.51,1.4,31.87,14.51h1.55Zm-1.3,3.84L28.21,14.51h1.56L18.35,3.31Zm8.56,18.73H20.87V15.67H12.5v7.15H7.21V14.6L6.12,15.66v8.25h7.47V16.75h6.19v7.16h7.46V15.6l-1.09-1.06Z"/>
                 </svg>
@@ -662,11 +665,11 @@
             </li>
 
             <!-- OTHER LINKS -->
-             <li style="display:inline-block; margin:0 10px;"><a href="info.html" class="navbar-link" style="font-weight:bold;">Bungalows Info</a></li>
+            <li style="display:inline-block; margin:0 10px;"><a href="bunglow_info.html" class="navbar-link" style="font-weight:bold;">Bungalows Info</a></li>
             <li style="display:inline-block; margin:0 10px;"><a href="about.html" class="navbar-link" style="font-weight:bold;">About</a></li>
-            <li style="display:inline-block; margin:0 10px;"><a href="goals.html" class="navbar-link" style="font-weight:bold;">Goals</a></li>
+            <li style="display:inline-block; margin:0 10px;"><a href="goals_new.html" class="navbar-link" style="font-weight:bold;">Goals</a></li>
             <li style="display:inline-block; margin:0 10px;"><a href="living.html" class="navbar-link" style="font-weight:bold;">Living</a></li>
-            <li style="display:inline-block; margin:0 10px;"><a href="contact.html" class="navbar-link" style="font-weight:bold;">Contact</a></li>
+            <li style="display:inline-block; margin:0 10px;"><a href="contact_new.html" class="navbar-link" style="font-weight:bold;">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -675,11 +678,11 @@
 </header>
 
 <!-- MOBILE NAV (below XL) -->
-<header class="header-mobile d-xl-none" style="background: transparent; padding: 10px 20px;">
+<header class="header-mobile d-xl-none" style="background: white; padding: 10px 20px;">
   <div class="container-fluid d-flex justify-content-between align-items-center">
     <!-- LOGO -->
-    <a href="index.html" class="brand-nav">
-      <img src="images/ck_logo.jpg" alt="Logo" style="height:65px; width:auto; object-fit:contain;">
+    <a href="index_new.html" class="brand-nav">
+      <img src="ck_logo.jpg" alt="Logo" style="height:45px; width:auto; object-fit:contain;">
     </a>
 
     <!-- MENU TOGGLE -->
@@ -692,22 +695,22 @@
   <div class="close-menu" id="menuClose">✕</div>
   <ul>
     <li>
-      <a href="index.html" style="font-weight:bold;">
+      <a href="index_new.html" style="font-weight:bold;">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.42 23.91" style="width:25px; height:20px;">
           <path d="M16.33,0,1.55,14.51H0L14.54.23A.81.81,0,0,1,15.11,0Zm2.56.25a.56.56,0,0,0-.76,0L3.58,14.51H5.13L18.51,1.4,31.87,14.51h1.55Zm-1.3,3.84L28.21,14.51h1.56L18.35,3.31Zm8.56,18.73H20.87V15.67H12.5v7.15H7.21V14.6L6.12,15.66v8.25h7.47V16.75h6.19v7.16h7.46V15.6l-1.09-1.06Z"/>
         </svg>
       </a>
     </li>
-   <li><a href="info.html" style="font-weight:bold;">Bungalows Info</a></li>
+    <li><a href="bunglow_info.html" style="font-weight:bold;">Bungalows Info</a></li>
     <li><a href="about.html" style="font-weight:bold;">About</a></li>
-    <li><a href="goals.html" style="font-weight:bold;">Goals</a></li>
+    <li><a href="goals_new.html" style="font-weight:bold;">Goals</a></li>
     <li><a href="living.html" style="font-weight:bold;">Living</a></li>
-    <li><a href="contact.html" style="font-weight:bold;">Contact</a></li>
+    <li><a href="contact_new.html" style="font-weight:bold;">Contact</a></li>
   </ul>
 </nav>
 
 <style>
-/* MOBILE MENU STYLING */
+/* Mobile menu CSS */
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -747,25 +750,89 @@
   font-size: 24px;
   cursor: pointer;
 }
-.brand-logo img,
-.brand-nav img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+/* Default font size for large screens */
+.txtfont {
+    font-size: 60px;
 }
 
-/* Responsive logo scaling */
+/* Large tablets / small desktops */
 @media (max-width: 1199px) {
-  .brand-logo img {
-    height: 55px;
-  }
+    .txtfont { font-size: 55px; }
+    
+}
+
+/* Tablets / medium screens */
+@media (max-width: 767px) {
+    .txtfont { font-size: 40px; }
+}
+
+/* Mobile */
+@media (max-width: 575px) {
+    .txtfont { font-size: 30px; }
+}
+/* Add padding to text containers */
+.container.page-wrap .card, 
+.container.introtop.page-wrap {
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+/* Responsive tweaks for mobile */
+@media (max-width: 767px) {
+    .container.page-wrap .card,
+    .container.introtop.page-wrap {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .cb-title {
+        font-size: 1.2rem; /* smaller heading on mobile */
+    }
+
+    .ct-text p {
+        font-size: 1rem; /* smaller paragraph */
+        line-height: 1.5rem; /* better readability */
+    }
+
+    .card-link span {
+        font-size: 0.95rem; /* smaller link text */
+    }
+}
+/* @media (max-width: 767px) {
+.cb-text {
+        display: none;
+} */
+
+@media (max-width: 1199px) {
+.cb-layer {
+    display: none;
+}
 }
 @media (max-width: 767px) {
-  .brand-logo img,
-  .brand-nav img {
-    height: 45px;
+.cb-layer {
+    display: none;
+}
+}
+.bx-margin {
+    margin-bottom: 40px
+} 
+/* Center elements on mobile */
+@media (max-width: 767px) {
+  .cb-mob {
+    text-align: center !important;
+  }
+
+  .cb-img img {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .cb-subtitle {
+    text-align: center;
   }
 }
+
 </style>
 
 <script>
@@ -776,6 +843,7 @@ const closeBtn = document.getElementById("menuClose");
 toggle.addEventListener("click", () => menu.classList.add("active"));
 closeBtn.addEventListener("click", () => menu.classList.remove("active"));
 </script>
+
 
 <style>
 /* Mobile menu CSS */
@@ -1025,7 +1093,7 @@ closeBtn.addEventListener("click", () => menu.classList.remove("active"));
   <div class="contact-container">
     <h2>Get in Touch</h2>
     
-    <p>Have a query or want to collaborate? Send us a message — we’ll respond shortly.</p>
+    <p>Have a query or want to collaborate? Send us a message — We’ll respond shortly.</p>
 
     <form id="contactForm">
       <div class="form-group">
