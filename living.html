@@ -700,13 +700,14 @@
 
 
 <!-- DESKTOP NAV (XL and above) -->
-<header class="header-main d-none d-xl-block" style="background: transparent; padding: 10px 40px;">
+<header class="header-main d-none d-xl-block" style="background: transparent; padding: 8px 30px;">
   <div class="container-fluid">
     <div class="row align-items-center justify-content-between">
+      
       <!-- LOGO -->
       <div class="col-auto">
         <a href="index_new.html" class="brand-logo">
-          <img src="ck_logo.jpg" alt="Logo" style="height:65px; width:auto; object-fit:contain;">
+          <img src="ck_logo.jpg" alt="Logo" style="height:60px; width:auto; object-fit:contain;">
         </a>
       </div>
 
@@ -715,11 +716,13 @@
         <nav class="main-nav">
           <ul class="nav align-items-center justify-content-end" style="list-style:none; margin:0; padding:0;">
             <style>
+              /* General nav link styles */
               .nav-link {
                 color: white;
                 text-decoration: none;
                 font-weight: 500;
                 transition: 0.3s;
+                padding: 5px 6px; /* ⬅️ Reduced padding inside buttons */
               }
 
               .nav-link:hover {
@@ -728,8 +731,8 @@
 
               .nav-icon {
                 fill: white;
-                width: 25px;
-                height: 20px;
+                width: 22px;
+                height: 18px;
                 vertical-align: middle;
                 transition: 0.3s;
               }
@@ -738,15 +741,19 @@
                 fill: gold !important;
               }
 
-              .mobile_new{
-                color:#000 !important
+              /* ⬇️ Reduced spacing between buttons */
+              .nav > li {
+                display: inline-block;
+                margin: 0 4px; /* was 10px before — now much tighter */
               }
 
-             
+              .mobile_new {
+                color: #000 !important;
+              }
             </style>
 
             <!-- HOME ICON -->
-            <li style="display:inline-block; margin:0 10px;">
+            <li>
               <a href="index_new.html" class="nav-link" style="font-weight:bold;">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.42 23.91" class="nav-icon">
                   <path d="M16.33,0,1.55,14.51H0L14.54.23A.81.81,0,0,1,15.11,0Zm2.56.25a.56.56,0,0,0-.76,0L3.58,14.51H5.13L18.51,1.4,31.87,14.51h1.55Zm-1.3,3.84L28.21,14.51h1.56L18.35,3.31Zm8.56,18.73H20.87V15.67H12.5v7.15H7.21V14.6L6.12,15.66v8.25h7.47V16.75h6.19v7.16h7.46V15.6l-1.09-1.06Z"/>
@@ -754,16 +761,18 @@
               </a>
             </li>
 
-            <li style="display:inline-block; margin:0 10px;"><a href="bunglow_info.html" class="nav-link" style="font-weight:bold;">Bungalows Info</a></li>
-            <li style="display:inline-block; margin:0 10px;"><a href="about.html" class="nav-link" style="font-weight:bold;">About</a></li>
-            <li style="display:inline-block; margin:0 10px;"><a href="goals_new.html" class="nav-link" style="font-weight:bold;">Goals</a></li>
-            <li style="display:inline-block; margin:0 10px;"><a href="contact_new.html" class="nav-link" style="font-weight:bold;">Contact</a></li>
+            <li><a href="bunglow_info.html" class="nav-link" style="font-weight:bold;">Bungalows Info</a></li>
+            <li><a href="about.html" class="nav-link" style="font-weight:bold;">About</a></li>
+            <li><a href="goals_new.html" class="nav-link" style="font-weight:bold;">Goals</a></li>
+            <li><a href="living.html" class="nav-link" style="font-weight:bold;">Living</a></li>
+            <li><a href="contact_new.html" class="nav-link" style="font-weight:bold;">Contact</a></li>
           </ul>
         </nav>
       </div>
     </div>
   </div>
 </header>
+
 
 <!-- MOBILE NAV (below XL) -->
 <header class="header-mobile d-xl-none" style="background: white; padding: 10px 20px; position: relative; z-index: 1;">
@@ -792,6 +801,7 @@
     <li><a href="bunglow_info.html" style="font-weight:bold;">Bungalows Info</a></li>
     <li><a href="about.html" style="font-weight:bold;">About</a></li>
     <li><a href="goals_new.html" style="font-weight:bold;">Goals</a></li>
+    <li><a href="living.html" style="font-weight:bold;">Living</a></li>
     <li><a href="contact_new.html" style="font-weight:bold;">Contact</a></li>
   </ul>
 </nav>
