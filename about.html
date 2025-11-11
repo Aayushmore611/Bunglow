@@ -943,10 +943,16 @@ body {
     flex-direction: column;  /* so text below image stays stacked */
 }
 /* Image style for all sections */
-.section1-left img, .section2-right img {
+.section2-right img {
     width: 200px;
     height: 200px;
-    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow:none rgba(0,0,0,0.2);
+}
+.section1-left img{
+    width: 130px;
+    height: 200px;
     object-fit: cover;
     margin-bottom: 20px;
     box-shadow:none rgba(0,0,0,0.2);
@@ -1057,7 +1063,7 @@ body {
      style="display: flex; align-items: center; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: 0;">
   
   <div class="section1-left" style="text-align: center;">
-    <img src="images/Logo.jpeg" alt="Company Logo" class="company-logo">
+    <img src="ck_logo.jpg" alt="Company Logo" class="company-logo" style="height: auto;">
 
     <div class="company-name" style="font-weight:bold; font-size:22px; margin-top:15px;">CHANDRAKANT KELE</div>
     <div class="tagline" style="color:#666;">• Trusted Developer • Exceptional Legacy</div>
@@ -1074,11 +1080,16 @@ body {
 
 <!-- Responsive CSS -->
 <style>
+  .section1-left .section1-right{
+    @media (max-width: 768px){
+        width: 130px;
+        height: 277px;
+    }
+  }
 .company-logo {
   width: 200px;
   height: 200px;
   object-fit: cover;
-  border-radius: 50%;
   transition: all 0.3s ease;
 }
 
@@ -1087,7 +1098,7 @@ body {
   .company-logo {
     width: 140px;
     height: 140px;
-    border-radius: 50%;
+    
   }
 
   .section {
@@ -1143,7 +1154,7 @@ body {
       <p>📍 Dhule, India</p>
       <p>📞 +91 9503156156</p>
       <p>📞 <a href="https://wa.me/message/TRHHE765WW45O1" style="text-decoration: none; color: white;">Whatsapp Support</a></p>
-      <p>✉️ info.teamkhrushanayk@gmail.com</p>
+      <p>✉️ inquiry@7oasisdhule.in</p>
     </div>
 
     <!-- Location (Map) -->
