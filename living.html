@@ -47,9 +47,7 @@
     <link type="text/css" href="https://vianaar.com/css-vianaar/main.min.css?v=2.0.0" rel="stylesheet">
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-
-    <style type="text/css">
+<style type="text/css">
             .card.card-text .cb-title, .card.card-text .title h2, .title .card.card-text h2 {
                 border-bottom: 1px solid #88340b;
             }
@@ -157,11 +155,7 @@
     z-index: -1;
     object-fit: cover; /* Keep cover but reduce zoom effect */
 }
-
-    
-    
-
-        .hero-Section {
+.hero-Section {
             width: 100%;
             height: 100vh; /* Full screen height */
             /* background: url("video.mp4") no-repeat center center; */
@@ -436,8 +430,7 @@
             overflow: hidden;
         }
 
-
-    /* CSS FOR SLIDER */
+/* CSS FOR SLIDER */
 
      .slider {
       width: 80%;
@@ -499,8 +492,7 @@
 
     }
     </style>
-
-    <!-- Google Tag Manager -->
+<!-- Google Tag Manager -->
     <script>
         (function(w, d, s, l, i) {
             w[l] = w[l] || [];
@@ -516,7 +508,7 @@
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-N6S5KK');
     </script>
-    <!-- End Google Tag Manager -->
+     <!-- End Google Tag Manager -->
 
 
     <meta name="facebook-domain-verification" content="yao8f20u26ydpx7m0101rhwozcc2jg" />
@@ -656,7 +648,6 @@
             border-color: #9cc6b5 !important;
         }
     </style>
-
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             if ($(".regnum").length == 0) {
@@ -664,11 +655,7 @@
             }
         });
     </script>
-
-
-
 </head>
-
 <!-- Main Body -->
 
 <body class="home-page hasHero ">
@@ -698,7 +685,6 @@
 <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=5309652&fmt=gif" />
 </noscript>
 
-
 <!-- DESKTOP NAV (XL and above) -->
 <header class="header-main d-none d-xl-block" style="background: transparent; padding: 8px 30px;">
   <div class="container-fluid">
@@ -707,7 +693,7 @@
       <!-- LOGO -->
       <div class="col-auto">
         <a href="index_new.html" class="brand-logo">
-          <img src="ck_logo.jpg" alt="Logo" style="height:60px; width:auto; object-fit:contain;">
+          <img src="ck_logo.png" alt="Logo" style="height: 105px; width:auto; object-fit:contain;">
         </a>
       </div>
 
@@ -751,8 +737,7 @@
                 color: #000 !important;
               }
             </style>
-
-            <!-- HOME ICON -->
+<!-- HOME ICON -->
             <li>
               <a href="index_new.html" class="nav-link" style="font-weight:bold;">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.42 23.91" class="nav-icon">
@@ -772,14 +757,12 @@
     </div>
   </div>
 </header>
-
-
 <!-- MOBILE NAV (below XL) -->
 <header class="header-mobile d-xl-none" style="background: white; padding: 10px 20px; position: relative; z-index: 1;">
   <div class="container-fluid d-flex justify-content-between align-items-center">
     <!-- LOGO -->
     <a href="index_new.html" class="brand-nav">
-      <img src="ck_logo.jpg" alt="Logo" style="height: 45px !important; width:auto; object-fit:contain;">
+      <img src="ck_logo.png" alt="Logo" style="height: 65px !important; width:auto; object-fit:contain;">
     </a>
 
     <!-- MENU TOGGLE -->
@@ -1105,46 +1088,39 @@ const hexagon =
 const star =
   "M250,40 C258,40 266,46 270,55 L315,170 C319,180 330,187 340,187 L440,187 C452,187 460,198 452,207 L360,280 C353,286 350,297 354,306 L400,410 C405,420 398,432 386,429 L270,360 C262,356 238,356 230,360 L114,429 C102,432 95,420 100,410 L146,306 C150,297 147,286 140,280 L48,207 C40,198 48,187 60,187 L160,187 C170,187 181,180 185,170 L230,55 C234,46 242,40 250,40 Z";
 
-/* Check device type */
-const isMobile = window.matchMedia("(max-width: 768px)").matches;
+let animationFrame;
 
-if (!isMobile) {
-  // Desktop → morphing enabled
-  let animationFrame;
-  function smoothMorph(from, to, gradient, duration = 800) {
-    if (animationFrame) cancelAnimationFrame(animationFrame);
-    const interpolator = flubber.interpolate(from, to, { maxSegmentLength: 2 });
-    const start = performance.now();
-    blob.setAttribute("fill", `url(#${gradient})`);
+function smoothMorph(from, to, gradient, duration = 800) {
+  if (animationFrame) cancelAnimationFrame(animationFrame);
 
-    function animate(time) {
-      const progress = Math.min((time - start) / duration, 1);
-      blob.setAttribute("d", interpolator(progress));
-      if (progress < 1) animationFrame = requestAnimationFrame(animate);
-    }
-    requestAnimationFrame(animate);
+  const interpolator = flubber.interpolate(from, to, { maxSegmentLength: 2 });
+  const start = performance.now();
+  blob.setAttribute("fill", `url(#${gradient})`);
+
+  function animate(time) {
+    const progress = Math.min((time - start) / duration, 1);
+    blob.setAttribute("d", interpolator(progress));
+    if (progress < 1) animationFrame = requestAnimationFrame(animate);
   }
-
-  document.getElementById("design").addEventListener("mouseenter", () =>
-    smoothMorph(blob.getAttribute("d"), hexagon, "gradHex")
-  );
-  document.getElementById("care").addEventListener("mouseenter", () =>
-    smoothMorph(blob.getAttribute("d"), star, "gradStar")
-  );
-  document.querySelectorAll(".option").forEach((opt) =>
-    opt.addEventListener("mouseleave", () =>
-      smoothMorph(blob.getAttribute("d"), circle, "gradCircle")
-    )
-  );
-} else {
-  // Mobile → static large circle
-  blob.setAttribute("d", circle);
-  blob.setAttribute("fill", "url(#gradCircle)");
+  requestAnimationFrame(animate);
 }
+
+document.getElementById("design").addEventListener("mouseenter", () =>
+  smoothMorph(blob.getAttribute("d"), hexagon, "gradHex")
+);
+
+document.getElementById("care").addEventListener("mouseenter", () =>
+  smoothMorph(blob.getAttribute("d"), star, "gradStar")
+);
+
+document.querySelectorAll(".option").forEach((opt) =>
+  opt.addEventListener("mouseleave", () =>
+    smoothMorph(blob.getAttribute("d"), circle, "gradCircle")
+  )
+);
 </script>
 
-        
-        <!-- Footer -->
+<!-- Footer -->
         <!-- Footer -->
 <footer class="footer">
   <div class="footer-container">
